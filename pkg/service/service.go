@@ -103,7 +103,7 @@ type OutputEvent struct {
 	RespHeaderBytes      string      `json:"resp_header_bytes"`
 	RespBodyBytes        string      `json:"resp_body_bytes"`
 	WafEvents            []OutputWaf `json:"waf_events"`
-	ThrottlingRule       string      `json:"throttling_rule"`
+	ThrottlingRule       string      `json:"throttling_rule,omitempty"`
 }
 
 // OutputWaf is the output format for the waf event
